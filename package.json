@@ -1,23 +1,16 @@
 {
-  "name": "electron-quick-start",
+  "name": "electron-quick-start-2",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "Minimalny przykład, który działa",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "compile": "electron-webpack",
-    "dist": "yarn compile && electron-builder",
-    "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null",
-    "pack": "electron-builder --dir",
     "dist": "electron-builder"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/zerotrzy/electron0",
   "keywords": [
     "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "przykład"
   ],
   "author": "GitHub",
   "license": "CC0-1.0",
