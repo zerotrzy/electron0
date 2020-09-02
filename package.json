@@ -2,14 +2,19 @@
   "name": "electron-quick-start-2",
   "version": "1.0.0",
   "description": "Minimalny przykład, który działa",
-  "main": "main.js",
+  "main": "./main.js",
   "scripts": {
     "start": "electron .",
     "dist": "electron-builder"
   },
-  "build": {
-    "linux": ["AppImage", "snap"]
-  },
+"build": {
+    "files": [
+        "./*"
+    ],
+    "linux": {
+        "target": ["AppImage", "snap"]
+    }
+},
   "repository": "https://github.com/zerotrzy/electron0",
   "keywords": [
     "Electron",
