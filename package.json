@@ -7,6 +7,9 @@
     "start": "electron .",
     "dist": "electron-builder"
   },
+  "build": {
+    "linux": ["AppImage", "snap"]
+  },
   "repository": "https://github.com/zerotrzy/electron0",
   "keywords": [
     "Electron",
