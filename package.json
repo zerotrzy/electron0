@@ -7,14 +7,10 @@
     "start": "electron .",
     "dist": "electron-builder"
   },
-"build": {
-    "files": [
-        "./*"
-    ],
-    "linux": {
-        "target": ["AppImage", "snap"]
-    }
-},
+  "build": {
+   "files": [ "./main.js", "./index.html", "./renderer.js", "./preload.js" ],
+   "linux": { "target": ["AppImage", "snap"] }
+  },
   "repository": "https://github.com/zerotrzy/electron0",
   "keywords": [
     "Electron",
