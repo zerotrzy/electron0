@@ -2,8 +2,6 @@
 <html>
 <head>
  <meta charset="UTF-8">
- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
- <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
  <title>Pierwsze koty za płoty</title>
 </head>
 <body>
@@ -11,6 +9,13 @@
   Używamy tu Node.js <span id="node-version"></span>,
   Chromium <span id="chrome-version"></span>,
   i Electron <span id="electron-version"></span>.
+
+<hr/>
+
+  Testowanie przycisku<br/>
+
+  <button onclick="funruby()">Program w Ruby</button>
+  <p id="przyciskruby">Wynik przycisku</p>
 
   <!-- Wczytujemy js, np. do poprawienia wyglądu -->
   <script src="./renderer.js"></script>

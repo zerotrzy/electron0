@@ -2,6 +2,8 @@
 const {app, BrowserWindow} = require('electron')
 const path = require('path')
 
+//const appIcon = new Tray('./obrazy/kermit.png') wystarczy tylko ikonka
+
 function createWindow ()
 {
  // Główne okno przegladarki
@@ -10,6 +12,7 @@ function createWindow ()
     backgroundColor: '#8194a3',
     textAreasAreResizable: false, // nie da się zwiększyć tekstu
     resizable: false,
+    icon: path.join(__dirname, 'obrazy/kermit.png'),
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     }
